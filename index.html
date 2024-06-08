@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Canteen</title>
+    <title>Smart Canteen Customer Panel</title>
+
+	
+	
+<style>
+    	 body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #f0f0f0;
+			padding: 20px;
+			text-align: right;
+		}
+		.menu {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.menu ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.menu li {
+			margin-bottom: 10px;
+		}
+		.menu a {
+			color: #337ab7;
+			text-decoration: none;
+		}
+		.menu a:hover {
+			color: #23527c;
+		} 
+        .hero {
+         text-align: center;
+        }
+</style>
+
+<!-- index.html -->
+
+
+  <title>Smart Canteen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a href="#home" class="active">Smart Canteen</a>
+    <div id="myLinks">
+      <a href="#menu">Menu</a>
+      <a href="#orders">Orders</a>
+      <a href="#account">Account</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <script >
+    // script.js
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
+  <style>
+    /* styles.css */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.open_snackbar_button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.open_snackbar_button:hover {
+  background-color: #3e8e41;
+}
+
+.close_snackbar {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close_snackbar svg {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.close_snackbar:hover {
+  background-color: #f2f2f2;
+}
+
+.close_snackbar:hover svg {
+  fill: #ccc;
+  stroke: #ccc;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+  </style>
+</body>
+
+
+<body>
+	<div class="header">
+		<h1>Smart Canteen</h1>
+		<p>Friday, June 7, 2024</p>
+
+        <button class="open_snackbar_button" onclick="openSnackbar()">Open snackbar</button>
+
+<div id="snackbar">
+  <p>You didn't share this video</p>
+  <button class="close_snackbar" onclick="closeSnackbar()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="#fff" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+
+      
+    </svg>
+  </button>
+</div>
+	</div>
+	<!-- <div class="menu">
+		<h2>Main Menu</h2>
+		<ul>
+			<li><a href="#">Products Report Generator</a></li>
+			<li><a href="#">Administrator</a></li>
+			<li><a href="#">Exit</a></li>
+		</ul>
+	</div> -->
+ 
+    
+
+
+  
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Smart Canteen</h1>
+    <p>Order food online and book your table now!</p>
+   <button class="sign-up-btn">Sign Up</button>
+   <button class="sign-in-btn">Sign In</button>
+   <button class="book-Table-btn">book Table</button>
+    
+  </section>
+  
+
+ <!-- Menu Section -->
+<section id="menu">
+  <div class="menu-container container">
+    <h2 class="main-title">Our Menu</h2>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <div class="item-info">
+          <h3>Chicken Biryani</h3>
+          <p>Basmati rice cooked with chicken and spices</p>
+        </div>
+        <div class="item-price">$10.99</div>
+      </li>
+      <li class="menu-item">
+        <div class="item-info">
+          <h3>Veggie Burger</h3>
+
+          <!-- <div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>   -->  <div class="container"> 
+          <img src="burger.jpg" alt="Girl in a jacket" width="150" height="150" class="image">
+          <p>A juicy veggie patty served with lettuce and tomato</p>
+        </div>
+
+        <div class="item-price">  <button class="order-item"> Order</button>Rs.99/-</div>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="item-info">
+          <h3>Fish Fry</h3>
+          <p>Fresh fish fried to perfection with a side of tartar sauce</p>
+        </div>
+        <div class="item-price">$12.99</div>
+      </li>
+      <!-- Add more menu items here -->
+    </ul>
+  </div>
+</section>
+
+  <style>
+    /* Styles for sign up and sign in buttons */
+
+    /* Menu Styles */
+
+#menu {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.order-item {
+    align-items: center;
+}
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 30%;
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-info h3 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  text-align: right;
+}
+
+.sign-up-btn,.sign-in-btn,.book-Table-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover,.sign-in-btn:hover,.book-Table-btn {
+  background-color: #3e8e41;
+}
+
+.sign-up-btn {
+  margin-right: 10px;
+}
+
+.sign-in-btn {
+  margin-left: 10px;
+}
+
+.book-Table-btn{
+  margin-left: 10px;
+}
+  </style>
+
+	<div class="menu">
+		<h2>Admin Menu</h2>
+		<ul>
+			<li><a href="#">Create Products</a></li>
+			<li><a href="#">Display All Products Available</a></li>
+			<li><a href="#">Search Record (Query)</a></li>
+			<li><a href="#">Modify Products</a></li>
+			<li><a href="#">Delete Products</a></li>
+			<li><a href="#">Back to Main Menu</a></li>
+		</ul>
+	</div>
+	<div class="products">
+		<h2>Products Details</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Prod. No.</th>
+					<th>Name</th>
+					<th>Company</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Discount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Tea</td>
+					<td>Tata</td>
+					<td>15</td>
+					<td>30</td>
+					<td>0%</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Sandwich</td>
+					<td>Smith&Johns</td>
+					<td>45</td>
+					<td>10</td>
+					<td>5%</td>
+				</tr>
+				<tr>
+					<td>65</td>
+					<td>Samosa</td>
+					<td>Canteen</td>
+					<td>10</td>
+					<td>14</td>
+					<td>0%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    
+  <!-- About Us Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are passionate about food and customer service.</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Greater Noida, knowledge park,Uttar Pradesh,India</p>
+    <p>Phone: 7709045774</p>
+    <p>Email: ranjeetyadav.connect@gmail.com</p>
+   <!--<button>Book a Table</button>-->   
+  </section>
+</body>
+</html>
